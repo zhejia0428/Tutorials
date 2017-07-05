@@ -54,7 +54,7 @@ class PopAnimation: NSObject, UIViewControllerAnimatedTransitioning {
         
         if !self.presenting,
             let herbViewController = transitionContext.viewController(forKey: .from) as? HerbDetailsViewController {
-            herbViewController.descriptionView.isHidden = true
+            herbViewController.containerView.isHidden = true
             herbViewController.titleView.isHidden = true
         }
         
