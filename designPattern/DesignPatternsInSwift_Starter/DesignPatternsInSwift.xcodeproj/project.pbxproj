@@ -17,6 +17,8 @@
 		5D23FD2419D223C0003F5F4E /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD2319D223C0003F5F4E /* ShapeView.swift */; };
 		5D23FD2619D23F9B003F5F4E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD2519D23F9B003F5F4E /* Shape.swift */; };
 		6A6728FA19EE21B60026F8C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6728F919EE21B60026F8C9 /* Utils.swift */; };
+		EDD982731F0EF7610059357A /* ShapeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD982721F0EF7610059357A /* ShapeViewFactory.swift */; };
+		EDD982751F0EFBDB0059357A /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD982741F0EFBDB0059357A /* ShapeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		5D23FD2319D223C0003F5F4E /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		5D23FD2519D23F9B003F5F4E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		6A6728F919EE21B60026F8C9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EDD982721F0EF7610059357A /* ShapeViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewFactory.swift; sourceTree = "<group>"; };
+		EDD982741F0EFBDB0059357A /* ShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +91,10 @@
 		5D23FCFC19D21A02003F5F4E /* DesignPatternsInSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5D23FCFF19D21A02003F5F4E /* AppDelegate.swift */,
-				5D23FD1F19D21CB4003F5F4E /* GameView.swift */,
-				5D23FD0119D21A02003F5F4E /* GameViewController.swift */,
-				5D23FD2519D23F9B003F5F4E /* Shape.swift */,
-				5D23FD2319D223C0003F5F4E /* ShapeView.swift */,
-				6A6728F919EE21B60026F8C9 /* Utils.swift */,
+				EDD982701F0EF72E0059357A /* Models */,
+				EDD9826E1F0EF7130059357A /* Views */,
+				EDD9826F1F0EF7210059357A /* Controllers */,
+				EDD982711F0EF73C0059357A /* Utility */,
 				5D23FCFD19D21A02003F5F4E /* Supporting Files */,
 			);
 			path = DesignPatternsInSwift;
@@ -101,6 +103,7 @@
 		5D23FCFD19D21A02003F5F4E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D23FCFF19D21A02003F5F4E /* AppDelegate.swift */,
 				5D23FD0319D21A02003F5F4E /* Main.storyboard */,
 				5D23FD0619D21A02003F5F4E /* Images.xcassets */,
 				5D23FD0819D21A02003F5F4E /* LaunchScreen.xib */,
@@ -124,6 +127,41 @@
 				5D23FD1419D21A02003F5F4E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDD9826E1F0EF7130059357A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FD1F19D21CB4003F5F4E /* GameView.swift */,
+				5D23FD2319D223C0003F5F4E /* ShapeView.swift */,
+				EDD982721F0EF7610059357A /* ShapeViewFactory.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EDD9826F1F0EF7210059357A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FD0119D21A02003F5F4E /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EDD982701F0EF72E0059357A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FD2519D23F9B003F5F4E /* Shape.swift */,
+				EDD982741F0EFBDB0059357A /* ShapeFactory.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EDD982711F0EF73C0059357A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6A6728F919EE21B60026F8C9 /* Utils.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +271,9 @@
 				5D23FD0219D21A02003F5F4E /* GameViewController.swift in Sources */,
 				5D23FD2019D21CB4003F5F4E /* GameView.swift in Sources */,
 				6A6728FA19EE21B60026F8C9 /* Utils.swift in Sources */,
+				EDD982731F0EF7610059357A /* ShapeViewFactory.swift in Sources */,
 				5D23FD2419D223C0003F5F4E /* ShapeView.swift in Sources */,
+				EDD982751F0EFBDB0059357A /* ShapeFactory.swift in Sources */,
 				5D23FD0019D21A02003F5F4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
